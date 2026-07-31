@@ -163,7 +163,7 @@ fun ServerCard(server: VpnServer, isSelected: Boolean, onSelect: () -> Unit) {
         Row(
             modifier = Modifier.padding(16.dp).fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
-            alignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Column {
                 Text(text = server.name, style = MaterialTheme.typography.bodyLarge)
