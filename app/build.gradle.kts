@@ -47,5 +47,4 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // Библиотека с Xray-core ядра
-    implementation("com.github.2dust:AndroidLibXrayLite:1.6.0")
 }
