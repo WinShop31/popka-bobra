@@ -14,8 +14,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - uses: gradle/actions/setup-gradle@v3
-      - run: chmod +x gradlew || true
-      - run: gradle wrapper --gradle-version 8.7
+      - run: |
+          gradle wrapper --gradle-version 8.7
+          chmod +x gradlew
+          ./gradlew assembleDebug
+      - run: |
+          gradle wrapper --gradle-version 8.7
+          chmod +x gradlew
+          ./gradlew assembleDebug
         chmod +x gradlew
         ./gradlew assembleDebug --stacktrace
       - uses: actions/upload-artifact@v4
